@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/camera" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:paddingTop="19dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="80dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/igtv"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="22dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="17dp"
+                android:src="@drawable/messanger" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbarSize="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/your"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/live"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/story"
+                        android:padding="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/story1"
+                        android:padding="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/story"
+                        android:padding="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/story"
+                        android:padding="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/story1"
+                        android:padding="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/story"
+                        android:padding="10dp"
+                        />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/post_imgq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/postimg"
+                                android:padding="10dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toLeftOf="@id/post_nameq"
+                                />
+                            <TextView
+                                android:id="@+id/post_nameq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="joshua_l"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toTopOf="@id/img_textq"
+                                app:layout_constraintLeft_toRightOf="@id/post_imgq"
+                                />
+
+                            <TextView
+                                android:id="@+id/img_textq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:text="Tokyo, Japan"
+                                android:layout_marginBottom="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/post_nameq"
+                                app:layout_constraintLeft_toRightOf="@id/post_imgq"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="..."
+                                android:textSize="25dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="15dp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:src="@drawable/rectangle"
+                            />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_post_likeq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintBottom_toTopOf="@id/text_linerq"
+                                android:src="@drawable/shape5"
+                                android:padding="10dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_coment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_likeq"
+                                app:layout_constraintBottom_toTopOf="@id/text_linerq"
+                                android:src="@drawable/shape1"
+                                android:padding="10dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_mesengerq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_coment"
+                                app:layout_constraintBottom_toTopOf="@id/text_linerq"
+                                android:src="@drawable/messanger"
+                                android:paddingTop="12dp"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_tochkaq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_mesengerq"
+                                android:src="@drawable/pagination"
+                                android:padding="10dp"
+                                android:layout_marginLeft="40dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_saveq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_tochkaq"
+                                app:layout_constraintBottom_toTopOf="@id/text_linerq"
+                                android:src="@drawable/save"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:layout_marginLeft="120dp"
+                                android:padding="10dp"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/text_linerq"
+                                app:layout_constraintTop_toBottomOf="@id/img_post_tochkaq"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/likeimg"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="3dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="   Liked by "
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="craig_love"
+                                    android:textStyle="bold"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" and "
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="44,686 others"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintTop_toBottomOf="@id/text_linerq"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="joshua_l "
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="The game in Japan was amazing and I want to "
+                                    />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="some photos"
+                                android:layout_marginTop="60dp"
+                                android:layout_marginLeft="10dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/post_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/postimg"
+                                android:padding="10dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toLeftOf="@id/post_name"
+                                />
+                            <TextView
+                                android:id="@+id/post_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="joshua_l"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toTopOf="@id/img_text"
+                                app:layout_constraintLeft_toRightOf="@id/post_img"
+                                />
+
+                            <TextView
+                                android:id="@+id/img_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:text="Tokyo, Japan"
+                                android:layout_marginBottom="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/post_name"
+                                app:layout_constraintLeft_toRightOf="@id/post_img"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="..."
+                                android:textSize="25dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="15dp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:src="@drawable/rectangle"
+                            />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_post_like"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintBottom_toTopOf="@id/text_liner"
+                                android:src="@drawable/shape5"
+                                android:padding="10dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_comentq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_like"
+                                app:layout_constraintBottom_toTopOf="@id/text_liner"
+                                android:src="@drawable/shape1"
+                                android:padding="10dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_mesenger"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_comentq"
+                                app:layout_constraintBottom_toTopOf="@id/text_liner"
+                                android:src="@drawable/messanger"
+                                android:paddingTop="12dp"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_tochka"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_mesenger"
+                                android:src="@drawable/pagination"
+                                android:padding="10dp"
+                                android:layout_marginLeft="40dp"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_post_save"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/img_post_tochka"
+                                app:layout_constraintBottom_toTopOf="@id/text_liner"
+                                android:src="@drawable/save"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:layout_marginLeft="120dp"
+                                android:padding="10dp"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/text_liner"
+                                app:layout_constraintTop_toBottomOf="@id/img_post_tochka"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/likeimg"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="3dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="   Liked by "
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="craig_love"
+                                    android:textStyle="bold"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" and "
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="44,686 others"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintTop_toBottomOf="@id/text_liner"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="joshua_l "
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="The game in Japan was amazing and I want to "
+                                    />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="some photos"
+                                android:layout_marginTop="60dp"
+                                android:layout_marginLeft="10dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
